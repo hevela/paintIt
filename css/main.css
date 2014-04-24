@@ -110,12 +110,53 @@ html, body {
 
 #tmp_canvas {
     position: absolute;
-    left: 0px; right: 0;
-    bottom: 0; top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
     cursor: crosshair;
 }
 
+#toolbar{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 10;
+}
 
+.colors{
+    display: block;
+}
+.colormode{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+#blue{
+    background: blue;
+}
+#red{
+    background: red;
+}
+#yellow{
+    background: #ffff00;
+}
+#green{
+    background: green;
+}
+#purple{
+    background: purple;
+}
+#black{
+    background: black;
+}
+#orange{
+    background: orange;
+}
 
 
 

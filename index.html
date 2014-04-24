@@ -22,13 +22,33 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <button id="clear">Clear</button>
-        <button class="bmode" id="pencil">Pencil</button>
-        <button class="bmode"  id="line">Line</button>
-        <button class="bmode"  id="rectangle">Rectangle</button>
-        <button class="bmode"  id="circle">Circle</button>
-        <button class="bmode"  id="ellipse">Ellipse</button>
-        <button class="bmode"  id="eraser">Eraser</button>
+        <div id="toolbar">
+            <div class="tools">
+                <button id="clear">Clear</button>
+                <button class="bmode" id="pencil">Pencil</button>
+                <button class="bmode" id="line">Line</button>
+                <button class="bmode" id="rectangle">Rectangle</button>
+                <button class="bmode" id="circle">Circle</button>
+                <button class="bmode" id="ellipse">Ellipse</button>
+                <button class="bmode" id="eraser">Eraser</button>
+            </div>
+            <div class="tools">
+                <button class="thickness" id="thin">thin</button>
+                <button class="thickness" id="normal">normal</button>
+                <button class="thickness" id="thick">thick</button>
+                <button class="thickness" id="thicker">thicker</button>
+            </div>
+            <div class="colors">
+                <span class="colormode" id="blue"></span>
+                <span class="colormode" id="red"></span>
+                <span class="colormode" id="purple"></span>
+                <span class="colormode" id="black"></span>
+                <span class="colormode" id="yellow"></span>
+                <span class="colormode" id="green"></span>
+                <span class="colormode" id="orange"></span>
+            </div>
+        </div>
+
         <div id="sketch">
             <canvas id="paint"></canvas>
         </div>
