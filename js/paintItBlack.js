@@ -21,6 +21,13 @@
     var canvas = document.querySelector('#paint');
     var ctx = canvas.getContext('2d');
 
+    var exportBtn = document.querySelector('#export');
+    exportBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        var img = canvas.toDataURL("image/png");
+        window.open(img,'_blank');
+    }, false);
+
     var sketch = document.querySelector('#sketch');
     var sketch_style = getComputedStyle(sketch);
     canvas.width = parseInt(sketch_style.getPropertyValue('width'));
@@ -37,7 +44,7 @@
     sketch.appendChild(tmp_canvas);
 
     var mouse = {x: 0, y: 0};
-    var last_mouse = {x: 0, y: 0};
+
     var start_mouse = {x: 0, y: 0};
 
     // Pencil Points
